@@ -1,0 +1,19 @@
+<p>angular works!</p>
+<table class="table">
+    <thead>
+        <th>Id</th>
+        <th>Email</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Images</th>
+    </thead>
+    <tr *ngFor="let img of imageData">
+        <td>{{img.id}}</td>
+        <td>{{img.email}}</td>
+        <td>{{img.first_name}}</td>
+        <td>{{img.last_name}}</td>
+       <td>
+           <img [src]=img.avatar alt="no img">
+       </td>
+    </tr>
+</table>

@@ -1,0 +1,66 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="aboutus">aboutus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contactus">contactus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="registration">registration</a>
+        </li>
+
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            technology
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="technology/angular">Angular</a>
+            <a class="dropdown-item" routerLink="technology/javascript">Javascript</a>
+            
+          </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link disabled" routerLink="#" tabindex="-1" aria-disabled="true"
+            >Disabled</a>
+            <a href=""></a>
+        </li>
+      </ul>
+      <form class="d-flex input-group w-auto float:right">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Type query"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-primary"
+          type="button"
+          data-mdb-ripple-color="dark"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
